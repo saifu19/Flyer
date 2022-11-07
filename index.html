@@ -23,6 +23,9 @@
             position: absolute;
             width: 100px;
         }
+        .left-text p {
+            line-height: 1.125 !important;
+        }
         .white-bg {
             background-color: white;
             width: 30vw;
@@ -33,7 +36,7 @@
             transform: translateX(5vw);
         }
         footer p {
-            font-size: 12px;
+            font-size: 10px;
         }
     </style>
     <body style="background-color: #172b54;">
@@ -43,32 +46,32 @@
                 <img class="dots" src="dots.png" style="height: 50px !important;">
             </div>
             <div class="col-3"></div>
-            <div class="col-6 text-center" style="background-image: url('Ellipse 1.png'); background-repeat: no-repeat; background-size: 100% 80px; height: 80px;">
-                <img src="BB logo.png" style="width: 180px; height:30px !important; margin-top: 15px;">
+            <div class="col-6 text-center" style="background-image: url('Ellipse 1.png'); background-repeat: no-repeat; background-size: 100% 90px; height: 90px;">
+                <img src="BB logo.png" style="height:30px !important; margin-top: 15px;">
             </div>
             <div class="col-1"></div>
         </div>
 
-        <div class="main mt-3 text-light">
-            <h3 class="text-capitalize ps-5">Access your COMPANY NAME <br> benefits anytime, anywhere</h3>
+        <div class="main mt-3 py-5 text-light">
+            <h1 class="text-capitalize ps-5 fw-bold">Access your COMPANY NAME <br> benefits anytime, anywhere</h1>
             <div class="row mt-4 gx-0">
                 <div class="col-6">
-                    <div class="blue-box p-3 ms-5" style="background-color: #165090;">
-                        As a COMPANY NAME employee, you can now access most employee benefit plan information and resources while you are "on the go" from your mobile device.
+                    <div class="blue-box p-3 ms-5 left-text" style="background-color: #165090;">
+                        <p class="mb-0">
+                            As a COMPANY NAME employee, you can now access most employee benefit plan information and resources while you are "on the go" from your mobile device.
+                        </p>
                     </div>
-                    <div class="my-3 ps-5">
-                        <p class="mb-0 fst-italic">Nothing to install!</p>
-                        <p class="mb-0 fst-italic">Acess from a computer,</p>
-                        <p class="mb-0 fst-italic">tablet or smartphone</p>
+                    <div class="my-3 left-text ps-5">
+                        <p class="mb-0 fst-italic">Nothing to install! <br> Acess from a computer, <br> tablet or smartphone</p>
                     </div>
-                    <div class="d-flex align-items-center py-3 bg-white icons-div">
-                        <div class="icons py-3 px-4 ms-5 me-2">
+                    <div class="d-flex align-items-center justify-content-center bg-white py-3 icons-div">
+                        <div class="icons py-3 px-4 me-2">
                             <img class="icons-img pt-3" src="Search.png" data="search">
                             <img class="icons-img" src="Benefits.png" data="benefits">
                             <img class="icons-img" src="Group Information.png" data="group">
                             <img class="icons-img" src="Forms.png" data="forms">
                         </div>
-                        <div class="body-text py-3 px-2 text-dark">
+                        <div class="body-text py-3 text-dark">
                             <div class="search">
                                 <h5 class="mb-1">Seachable</h5>
                                 <p>Quickly find service contact <br> information and online.</p>
@@ -101,7 +104,7 @@
                     <div class="phone-container text-center">
                         <img class="mt-5 phone-img" src="Phone.png" style="width: 300px;">
                         <div class="phone-inner-img">
-                            <img class="mb-3" src="BB logo.png" width="150px" style="margin-left: -25px;">
+                            <img class="mb-3" src="BB logo.png" width="200px" style="margin-left: -50px;">
                             <img src="qr.png" width="100px">
                         </div>
                         <div class="white-bg py-3"></div>
@@ -111,16 +114,16 @@
         </div>
 
         <!-- Footer -->
-        <footer class="ps-5 mb-3 row text-white">
+        <footer class="ps-5 pb-5 row text-white">
             <div class="col-3">
                 <h6>iPhone</h6>
                 <hr>
                 <div class="d-flex align-items-center">
-                    <img class="me-2" src="Share 2.png" style="width: 30px;">
+                    <img class="me-2" src="Share 2.png" style="width: 20px;">
                     <p class="mb-0">Tap the share icon in safari's lower menu bar</p>
                 </div>
                 <div class="d-flex align-items-center mt-3">
-                    <img class="me-2" src="Share.png" style="width: 30px;">
+                    <img class="me-2" src="Share.png" style="width: 20px;">
                     <p class="mb-0">Tap the share icon in safari's lower menu bar</p>
                 </div>
             </div>
@@ -128,11 +131,11 @@
                 <h6>Android</h6>
                 <hr>
                 <div class="d-flex align-items-center mb-4">
-                    <img class="me-2" src="menu.png" style="width: 30px;">
+                    <img class="me-2" src="menu.png" style="width: 20px;">
                     <p class="mb-0">Tap the icon on the top night menu bar</p>
                 </div>
                 <div class="d-flex align-items-center">
-                    <img class="me-2" src="Share.png" style="width: 30px;">
+                    <img class="me-2" src="Share.png" style="width: 20px;">
                     <p class="mb-0">Select add on home section</p>
                 </div>
             </div>
@@ -163,8 +166,8 @@
                 $(".white-bg").height($('.icons-div').height());
                 $(".white-bg").css('top', posStart);
                 $(".white-bg").css('left', '45vw');
+                $(".right-wrapper").css("height", "auto");
                 $(".right-wrapper").height($(".right-wrapper").height() + 50)
-                // $(".dots-container").css('left', positionX - 240 + "px");
             }
             $(document).ready(function() {
                 fitPage();
