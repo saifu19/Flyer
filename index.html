@@ -5,7 +5,12 @@
     </head>
     <style>
         body {
+            display: flex;
+            justify-content: center;
+        }
+        .body {
             margin: 0 10vw;
+            max-width: 1200px;
         }
         .icons img {
             display: block;
@@ -28,7 +33,8 @@
         }
         .white-bg {
             background-color: white;
-            width: 30vw;
+            width: 20vw;
+            max-width: 350px;
             position: absolute;
             z-index: -1;
         }
@@ -40,112 +46,114 @@
         }
     </style>
     <body style="background-color: #172b54;">
-        <!-- Header -->
-        <div class="header row">
-            <div class="col-2">
-                <img class="dots" src="dots.png" style="height: 50px !important;">
+        <div class="body">
+            <!-- Header -->
+            <div class="header row">
+                <div class="col-2">
+                    <img class="dots" src="dots.png" style="height: 50px !important;">
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6 text-center" style="background-image: url('Ellipse 1.png'); background-repeat: no-repeat; background-size: 100% 90px; height: 90px;">
+                    <img src="BB logo.png" style="height:30px !important; margin-top: 15px;">
+                </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-3"></div>
-            <div class="col-6 text-center" style="background-image: url('Ellipse 1.png'); background-repeat: no-repeat; background-size: 100% 90px; height: 90px;">
-                <img src="BB logo.png" style="height:30px !important; margin-top: 15px;">
-            </div>
-            <div class="col-1"></div>
-        </div>
-
-        <div class="main mt-3 py-5 text-light">
-            <h1 class="text-capitalize ps-5 fw-bold">Access your COMPANY NAME <br> benefits anytime, anywhere</h1>
-            <div class="row mt-4 gx-0">
-                <div class="col-6">
-                    <div class="blue-box p-3 ms-5 left-text" style="background-color: #165090;">
-                        <p class="mb-0">
-                            As a COMPANY NAME employee, you can now access most employee benefit plan information and resources while you are "on the go" from your mobile device.
-                        </p>
-                    </div>
-                    <div class="my-3 left-text ps-5">
-                        <p class="mb-0 fst-italic">Nothing to install! <br> Acess from a computer, <br> tablet or smartphone</p>
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center bg-white py-3 icons-div">
-                        <div class="icons py-3 px-4 me-2">
-                            <img class="icons-img pt-3" src="Search.png" data="search">
-                            <img class="icons-img" src="Benefits.png" data="benefits">
-                            <img class="icons-img" src="Group Information.png" data="group">
-                            <img class="icons-img" src="Forms.png" data="forms">
+    
+            <div class="main mt-3 py-5 text-light">
+                <h1 class="text-capitalize ps-5 fw-bold">Access your COMPANY NAME <br> benefits anytime, anywhere</h1>
+                <div class="row mt-4 gx-0">
+                    <div class="col-6">
+                        <div class="blue-box p-3 ms-5 left-text" style="background-color: #165090;">
+                            <p class="mb-0">
+                                As a COMPANY NAME employee, you can now access most employee benefit plan information and resources while you are "on the go" from your mobile device.
+                            </p>
                         </div>
-                        <div class="body-text py-3 text-dark">
-                            <div class="search">
-                                <h5 class="mb-1">Seachable</h5>
-                                <p>Quickly find service contact <br> information and online.</p>
+                        <div class="my-3 left-text ps-5">
+                            <p class="mb-0 fst-italic">Nothing to install! <br> Acess from a computer, <br> tablet or smartphone</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center bg-white py-3 icons-div">
+                            <div class="icons py-3 px-4 me-2">
+                                <img class="icons-img pt-3" src="Search.png" data="search">
+                                <img class="icons-img" src="Benefits.png" data="benefits">
+                                <img class="icons-img" src="Group Information.png" data="group">
+                                <img class="icons-img" src="Forms.png" data="forms">
                             </div>
+                            <div class="body-text py-3 text-dark">
+                                <div class="search">
+                                    <h5 class="mb-1">Seachable</h5>
+                                    <p>Quickly find service contact <br> information and online.</p>
+                                </div>
+                                
+                                <div class="benefits">
+                                    <h5 class="mb-1">Benefit Plans</h5>
+                                    <p>Review benefit plan design <br> information and find online <br> provide directories</p>
+                                </div>
                             
-                            <div class="benefits">
-                                <h5 class="mb-1">Benefit Plans</h5>
-                                <p>Review benefit plan design <br> information and find online <br> provide directories</p>
-                            </div>
-                        
-                            <div class="group">
-                                <h5 class="mb-1">Group Information</h5>
-                                <p>Access and print generic ID <br>cards with group information</p>
-                            </div>
-
-                            <div class="forms">
-                                <h5 class="mb-1">Forms</h5>
-                                <p>Download and print benefit <br> related documents and forms</p>
+                                <div class="group">
+                                    <h5 class="mb-1">Group Information</h5>
+                                    <p>Access and print generic ID <br>cards with group information</p>
+                                </div>
+    
+                                <div class="forms">
+                                    <h5 class="mb-1">Forms</h5>
+                                    <p>Download and print benefit <br> related documents and forms</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="dots-container float-end">
-                        <img src="dots.png" style="height: 50px;">
-                    </div>
-                </div>
-                <div class="col-6 right-wrapper" style="background-image: url('Ellipse 2.png'); background-repeat: no-repeat; background-size: 100% 100%;">
-                    <div class="d-flex justify-content-end me-2">
-                        <img src="dots.png" style="height: 50px;">
-                    </div>
-                    <div class="phone-container text-center">
-                        <img class="mt-5 phone-img" src="Phone.png" style="width: 300px;">
-                        <div class="phone-inner-img">
-                            <img class="mb-3" src="BB logo.png" width="200px" style="margin-left: -50px;">
-                            <img src="qr.png" width="100px">
+                        <div class="dots-container float-end">
+                            <img src="dots.png" style="height: 50px;">
                         </div>
-                        <div class="white-bg py-3"></div>
+                    </div>
+                    <div class="col-6 right-wrapper" style="background-image: url('Ellipse 2.png'); background-repeat: no-repeat; background-size: 100% 100%;">
+                        <div class="d-flex justify-content-end me-2">
+                            <img src="dots.png" style="height: 50px;">
+                        </div>
+                        <div class="phone-container text-center">
+                            <img class="mt-5 phone-img" src="Phone.png" style="width: 300px;">
+                            <div class="phone-inner-img">
+                                <img class="mb-3" src="BB logo.png" width="200px" style="margin-left: -50px;">
+                                <img src="qr.png" width="100px">
+                            </div>
+                            <div class="white-bg py-3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+    
+            <!-- Footer -->
+            <footer class="ps-5 pb-5 row text-white">
+                <div class="col-3">
+                    <h6>iPhone</h6>
+                    <hr>
+                    <div class="d-flex align-items-center">
+                        <img class="me-2" src="Share 2.png" style="width: 20px;">
+                        <p class="mb-0">Tap the share icon in safari's lower menu bar</p>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <img class="me-2" src="Share.png" style="width: 20px;">
+                        <p class="mb-0">Tap the share icon in safari's lower menu bar</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h6>Android</h6>
+                    <hr>
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="me-2" src="menu.png" style="width: 20px;">
+                        <p class="mb-0">Tap the icon on the top night menu bar</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img class="me-2" src="Share.png" style="width: 20px;">
+                        <p class="mb-0">Select add on home section</p>
+                    </div>
+                </div>
+                <!-- <div class="col-1"></div> -->
+                <div class="col-5 ms-2 d-flex justify-content-center align-items-center">
+                    <div class="p-2 blue-box rounded-3" style="background-color: #165090;">
+                        <h5>companyURL.mybenefitsapp.com</h5>
+                    </div>
+                </div>
+            </footer>
         </div>
-
-        <!-- Footer -->
-        <footer class="ps-5 pb-5 row text-white">
-            <div class="col-3">
-                <h6>iPhone</h6>
-                <hr>
-                <div class="d-flex align-items-center">
-                    <img class="me-2" src="Share 2.png" style="width: 20px;">
-                    <p class="mb-0">Tap the share icon in safari's lower menu bar</p>
-                </div>
-                <div class="d-flex align-items-center mt-3">
-                    <img class="me-2" src="Share.png" style="width: 20px;">
-                    <p class="mb-0">Tap the share icon in safari's lower menu bar</p>
-                </div>
-            </div>
-            <div class="col-3">
-                <h6>Android</h6>
-                <hr>
-                <div class="d-flex align-items-center mb-4">
-                    <img class="me-2" src="menu.png" style="width: 20px;">
-                    <p class="mb-0">Tap the icon on the top night menu bar</p>
-                </div>
-                <div class="d-flex align-items-center">
-                    <img class="me-2" src="Share.png" style="width: 20px;">
-                    <p class="mb-0">Select add on home section</p>
-                </div>
-            </div>
-            <!-- <div class="col-1"></div> -->
-            <div class="col-5 ms-2 d-flex justify-content-center align-items-center">
-                <div class="p-2 blue-box rounded-3" style="background-color: #165090;">
-                    <h5>companyURL.mybenefitsapp.com</h5>
-                </div>
-            </div>
-        </footer>
 
 
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
